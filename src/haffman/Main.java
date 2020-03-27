@@ -13,20 +13,7 @@ public class Main {
     private static final byte ENCODING_TABLE_SIZE = 127;
 
     public static void main(String[] args) throws IOException {
-        //указываем инструкцию с помощью аргументов командной строки
-            //if (args[0].equals("--compress") || args[0].equals("-c"))
-               // compress(args[1]);
-//            else if ((args[0].equals("--extract") || args[0].equals("-x"))
-//                    && (args[2].equals("--table") || args[2].equals("-t"))) {
-               // extract(args[1], args[3]);
 
-//            else
-//                throw new IllegalArgumentException();
-//        } catch (ArrayIndexOutOfBoundsException | IllegalArgumentException e) {
-//            System.out.println("Неверный формат ввода аргументов ");
-//            System.out.println("Читайте Readme.txt");
-//            e.printStackTrace();
-//        }
         String stringPath = "C:/Users/SEM/IdeaProjects/Haffman/src/haffman/haff.txt";
         compress(stringPath);
 
