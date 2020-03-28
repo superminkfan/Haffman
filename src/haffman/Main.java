@@ -27,7 +27,7 @@ public class Main {
         s1.append(stringPath).append(".cpr");
         String stringCompressed = s1.toString();
 //        Thread.sleep(1000);
-        extract(stringCompressed , stringTable);
+        //extract(stringCompressed , stringTable);
     }
 
     public static void compress(String stringPath) throws IOException {

@@ -25,8 +25,8 @@ public class HuffmanOperator {
     private String getCompressedString() {
         String compressed = "";
         String intermidiate = "";//промежуточная строка(без добавочных нулей)
-        //System.out.println("=============================Compression=======================");
-        //displayEncodingArray();
+        System.out.println("=============================Compression=======================");
+        displayEncodingArray();
         for (int i = 0; i < myString.length(); i++) {
             intermidiate += encodingArray[myString.charAt(i)];
         }
@@ -43,7 +43,7 @@ public class HuffmanOperator {
 
         //идеализированный коэффициент
         setCompressionRatio();
-        //System.out.println("===============================================================");
+        System.out.println("===============================================================");
         return compressed;
     }
 
@@ -74,7 +74,7 @@ public class HuffmanOperator {
         String delta = "";
         encodingArray = newEncodingArray;
 
-        //displayEncodingArray();
+        displayEncodingArray();
         //получить кол-во вставленных нулей
         for (int i = 0; i < 8; i++)
             delta += compressed.charAt(i);
